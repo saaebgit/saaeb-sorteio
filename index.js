@@ -75,7 +75,7 @@ document.getElementById('form').addEventListener("submit", async (event) => {
     return;
   	}
     try {
-		const response = await fetch(`${API_URL}/usuarios/`, {
+		const response = await fetch(`/api/usuarios`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
