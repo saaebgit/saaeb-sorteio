@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #1d71f0, #1d71f0);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/fundo.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1; /* Baixa opacidade */
+    z-index: -1; /* Fica atrás de tudo */
+  }
+  
+  
+  .container {
+    display: flex;
+    width: 90%;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .form-box {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-area {
+    text-align: center;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 65px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .logo-area h1 {
+    color: #ffffff;
+    font-size: 41px;
+    line-height: 1.2;
+    text-shadow:
+    
+    -2px -2px 0 #1b67b8,
+     2px -2px 0 #1b67b8,
+    -2px  2px 0 #1b67b8,
+     2px  2px 0 #1b67b8,
+    0px  2px 0 #024870dc,
+    2px  0px 0 #02507edc,
+    0px -2px 0 #02476edc,
+   -2px  0px 0 #06476ddc; 
+  }
+  
+  .logo-area p {
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  input {
+    padding: 12px 15px;
+    border: 2px solid #0f72db;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #00a2ff;
+  }
+  
+  button {
+    padding: 14px;
+    background: #0d7ef8;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #00aeff;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .left-panel,
+    .form-box {
+      width: 100%;
+    }
+  
+    .left-panel {
+      height: 200px;
+    }
+  
+    .wave {
+      width: 300px;
+      height: 300px;
+      top: -80px;
+      left: -100px;
+    }
+  }
+  

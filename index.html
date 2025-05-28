@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <title>Participe do Sorteio!</title>
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <div class="logo-area">
+        <img src="assets/logo-saae.png" alt="Logo" class="logo" />
+        <h1 id="cidades">Sorteio Barretos</h1>
+        <p>Cadastre-se para concorrer!</p>
+      </div>
+      <form id="form">
+        <input id="nome" type="text" placeholder="Digite seu nome completo" required />
+        <input id="numero" type="tel" placeholder="Digite seu número de celular" required />
+        <input id="email" type="email" placeholder="Digite seu e-mail" required />
+        <button id="participar" type="submit">PARTICIPAR</button>
+      </form>
+      <div id="pin-view" style="display: none;">
+        <h2>Cadastro realizado com sucesso!</h2>
+        <p>Seu PIN de participação é:</p>
+          <div id="pin-code" style="font-size: 2em; font-weight: bold; margin: 20px 0;"></div>
+        <p>Guarde este número para consultar seu resultado.</p>
+      </div>
+    </div>
+  </div>
+<script type="module" src="index.js"></script>
+</body>
+</html>
